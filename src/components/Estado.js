@@ -1,33 +1,33 @@
-import React, {Component} from "react";
+import React, { Component } from 'react';
 
 function EstadoaHijo(props) {
-    return(
-        <div>
-            <h3>{props.contadorHijo}</h3>
-        </div>
-    )
+  return (
+    <div>
+      <h3>{props.contadorHijo}</h3>
+    </div>
+  );
 }
 
-export default class Estado extends Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            contador: 0,
-        }
+export default class Estado extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      contador: 00,
+    };
 
-        // setInterval(() => {
-        //     this.setState({
-        //         contador:this.state.contador + 1
-        //     })
-        // }, 1000);
-    }
-    render() {
-        return(
-            <div>
-                <h2>Los estados</h2>
-                <p>{this.state.contador}</p>
-                <EstadoaHijo contadorHijo={this.state.contador}/>
-            </div>
-        )
-    }
+    // setInterval(() => {
+    //     this.setState({
+    //         contador:this.state.contador + 1
+    //     })
+    // }, 1000);
+  }
+  render() {
+    return (
+      <div>
+        <h2>Los estados</h2>
+        <p>{this.state.contador}</p>
+        <EstadoaHijo contadorHijo={this.state.contador} />
+      </div>
+    );
+  }
 }
