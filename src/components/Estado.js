@@ -12,7 +12,7 @@ export default class Estado extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      contador: 00,
+      contador: 0,
     };
 
     // setInterval(() => {

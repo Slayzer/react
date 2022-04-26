@@ -7,6 +7,9 @@ import RenderizadoCondicional from './components/RendirezadoCondicional';
 import RenderizadoElementos from './components/RenderizadoElementos';
 import { EventosES6, EventosES7, MasSobreEventos } from './components/Eventos';
 import ComunicacionComponentes from './components/ComunicacionComponentes';
+import AjaxApis from './components/AjaxApis';
+import CicloVida from './components/ CicloVida';
+import ScrollHooks from './components/ScrollHooks';
 import './App.css';
 
 function App() {
@@ -77,6 +80,12 @@ function App() {
             <MasSobreEventos></MasSobreEventos>
             <hr />
             <ComunicacionComponentes></ComunicacionComponentes>
+            <hr />
+            <CicloVida></CicloVida>
+            <hr />
+            <AjaxApis></AjaxApis>
+            <hr />
+            <ScrollHooks></ScrollHooks>
           </section>
         </header>
       </div>

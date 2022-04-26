@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Propiedades from './Propiedades';
+// import Propiedades from './Propiedades';
 
 export default class Padre extends Component {
   state = {
