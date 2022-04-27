@@ -10,6 +10,7 @@ import ComunicacionComponentes from './components/ComunicacionComponentes';
 import AjaxApis from './components/AjaxApis';
 import CicloVida from './components/ CicloVida';
 import ScrollHooks from './components/ScrollHooks';
+import RelojHooks from './components/RelojHooks';
 import './App.css';
 
 function App() {
@@ -86,6 +87,8 @@ function App() {
             <AjaxApis></AjaxApis>
             <hr />
             <ScrollHooks></ScrollHooks>
+            <hr />
+            <RelojHooks></RelojHooks>
           </section>
         </header>
       </div>

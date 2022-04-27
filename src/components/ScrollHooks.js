@@ -1,23 +1,39 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
 export default function ScrollHooks() {
-  const [scrollY, setScrollY] = useState(0);
+  const [scrollY, setScrollY] = useState(0)
 
   useEffect(() => {
-    console.log('Fase de actualizacion');
+    console.log('Moviendo el scroll')
 
-    const detectarScroll = () => setScrollY(window.pageYOffset);
-    window.addEventListener('scroll', detectarScroll);
-  });
+    const detectarScroll = () => setScrollY(window.pageYOffset)
+
+    window.addEventListener('scroll', detectarScroll)
+
+    return () => {
+      window.removeEventListener('scroll', detectarScroll)
+      console.log('Fase de desmontaje')
+    }
+  }, [scrollY])
 
   useEffect(() => {
-    console.log('Fase de montaje');
-  }, []);
+    console.log('Fase de montaje')
+  }, [])
+
+  useEffect(() => {
+    console.log('Fase de actualizacion')
+  })
+
+  useEffect(() => {
+    return () => {
+      console.log('Fase de desmontaje')
+    }
+  })
 
   return (
     <>
       <h2>Hooks - useEffect y el ciclo de vida</h2>
       <p>Scroll del navegador {scrollY}px</p>
     </>
-  );
+  )
 }
