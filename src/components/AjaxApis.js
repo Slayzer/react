@@ -25,13 +25,13 @@ export default class AjaxApis extends Component {
             .then((res) => res.json())
             .then((json) => {
               console.log(json);
-              const pokemon = {
+              let pokemon = {
                 id: json.id,
                 name: json.name,
                 avatar: json.sprites.front_default,
               };
 
-              const pokemons = [...this.state.pokemons, pokemon];
+              let pokemons = [...this.state.pokemons, pokemon];
 
               this.setState({ pokemons });
             });
