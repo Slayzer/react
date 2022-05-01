@@ -12,6 +12,7 @@ import CicloVida from './components/ CicloVida';
 import ScrollHooks from './components/ScrollHooks';
 import RelojHooks from './components/RelojHooks';
 import AjaxHooks from './components/AjaxHooks';
+import HooksPersonalizados from './components/HooksPersonalizados';
 import './App.css';
 
 function App() {
@@ -92,6 +93,8 @@ function App() {
             <RelojHooks></RelojHooks>
             <hr />
             <AjaxHooks></AjaxHooks>
+            <hr />
+            <HooksPersonalizados></HooksPersonalizados>
           </section>
         </header>
       </div>
