@@ -8,12 +8,14 @@ import RenderizadoElementos from './components/RenderizadoElementos';
 import { EventosES6, EventosES7, MasSobreEventos } from './components/Eventos';
 import ComunicacionComponentes from './components/ComunicacionComponentes';
 import AjaxApis from './components/AjaxApis';
-import CicloVida from './components/ CicloVida';
+import CicloVida from './components/CicloVida';
+import ContadorHooks from './components/ContadorHooks';
 import ScrollHooks from './components/ScrollHooks';
 import RelojHooks from './components/RelojHooks';
 import AjaxHooks from './components/AjaxHooks';
 import HooksPersonalizados from './components/HooksPersonalizados';
 import Referencias from './components/Referencias';
+import Formularios from './components/Formularios';
 
 import './App.css';
 
@@ -90,6 +92,8 @@ function App() {
             <hr />
             <AjaxApis></AjaxApis>
             <hr />
+            <ContadorHooks></ContadorHooks>
+            <hr />
             <ScrollHooks></ScrollHooks>
             <hr />
             <RelojHooks></RelojHooks>
@@ -97,7 +101,10 @@ function App() {
             <AjaxHooks></AjaxHooks>
             <hr />
             <HooksPersonalizados></HooksPersonalizados>
+            <hr />
             <Referencias></Referencias>
+            <hr />
+            <Formularios></Formularios>
             <hr />
           </section>
         </header>

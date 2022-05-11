@@ -17,7 +17,7 @@ export default function Referencias() {
     //   $menu.style.display = 'none';
     // }
 
-    if (e.refMenuBtn.current.textContent === 'Menu') {
+    if (refMenuBtn.current.textContent === 'Menu') {
       refMenuBtn.current.textContent = 'Cerrar';
       refMenu.current.style.display = 'block';
     } else {
